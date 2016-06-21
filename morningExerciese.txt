@@ -1,0 +1,25 @@
+ */
+public class prac {
+    public static void main(String[] args) {
+        int returned = parameterCount("aaa", "bbb");
+
+        System.out.println(returned);
+        System.out.println(stringLength("asdfasdf"));
+    }
+
+    public static int parameterCount(String... strs) {
+
+        return strs.length;
+    }
+
+    public static int stringLength (String str) {
+        return str.length();
+    }
+
+    public static String (String str1, String str2) {
+        if (str1.length() >= str2.length()) {
+            return str1;
+        } else 
+    }
+
+}
