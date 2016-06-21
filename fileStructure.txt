@@ -1,0 +1,499 @@
+cd /
+sudo mkdir my-favorite-things
+cd my-favorite-things/
+sudo mkdir books
+cd books
+sudo mkdir mark-twain
+cd mark-twain
+sudo touch book1.txt book2.txt
+
+~/my-favorite-things$ cd movies/
+~/my-favorite-things/movies$ ls
+~/my-favorite-things/movies$ mkdir grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace/
+~/my-favorite-things/movies/grace$ ls
+~/my-favorite-things/movies/grace$ mkdir breakThroughMovies
+~/my-favorite-things/movies/grace$ cd ..
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ touch alice.txt
+~/my-favorite-things/movies$ ls
+alice.txt	grace
+~/my-favorite-things/movies$ mv alice.txt ./grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace
+~/my-favorite-things/movies/grace$ ls
+alice.txt		breakThroughMovies
+~/my-favorite-things/movies/grace$ 
+
+Last login: Mon Jun 20 19:44:07 on console
+wanMacs-MBP:~ wanmac$ ls 
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r my-favorite-things/ ~/
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cp -R my-favorite-things/ ~/
+cp: my-favorite-things/: No such file or directory
+wanMacs-MBP:~ wanmac$ cp -r /my-favorite-things/ ~/
+wanMacs-MBP:~ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ pwd
+/Users/wanmac
+wanMacs-MBP:~ wanmac$ cp -r /my-favorite-things/ /Users/wanmac
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r /my-favorite-things/ /Users/wanmac
+wanMacs-MBP:/ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r my-favorite-things /Users/wanmac
+wanMacs-MBP:/ wanmac$ cd ~
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+wanMacs-MBP:~ wanmac$ cd my-favorite-things/
+wanMacs-MBP:my-favorite-things wanmac$ ls
+books
+wanMacs-MBP:my-favorite-things wanmac$ subl .
+-bash: subl: command not found
+wanMacs-MBP:my-favorite-things wanmac$ sublime
+wanMacs-MBP:my-favorite-things wanmac$ sublime .
+wanMacs-MBP:my-favorite-things wanmac$ subl .
+-bash: subl: command not found
+wanMacs-MBP:my-favorite-things wanmac$ PS1='\w\$ '
+~/my-favorite-things$ ls
+books
+~/my-favorite-things$ cd books
+~/my-favorite-things/books$ ls
+mark-twain
+~/my-favorite-things/books$ cd mark-twain/
+~/my-favorite-things/books/mark-twain$ ls
+book1.txt	book2.txt
+~/my-favorite-things/books/mark-twain$ cd ..
+~/my-favorite-things/books$ cd ..
+~/my-favorite-things$ mkdir movies
+~/my-favorite-things$ ls
+books	movies
+~/my-favorite-things$ cd movies/
+~/my-favorite-things/movies$ ls
+~/my-favorite-things/movies$ mkdir grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace/
+~/my-favorite-things/movies/grace$ ls
+~/my-favorite-things/movies/grace$ mkdir breakThroughMovies
+~/my-favorite-things/movies/grace$ cd ..
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ touch alice.txt
+~/my-favorite-things/movies$ ls
+alice.txt	grace
+~/my-favorite-things/movies$ mv alice.txt ./grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace
+~/my-favorite-things/movies/grace$ ls
+alice.txt		breakThroughMovies
+~/my-favorite-things/movies/grace$ clear
+
+~/my-favorite-things/movies/grace$ ls
+alice.txt		breakThroughMovies
+~/my-favorite-things/movies/grace$ cd ../..
+~/my-favorite-things$ mkdir music
+~/my-favorite-things$ cd music
+~/my-favorite-things/music$ mkdir disco
+~/my-favorite-things/music$ mkdir ./disco/ymca.txt
+~/my-favorite-things/music$ ls
+disco
+~/my-favorite-things/music$ cd disco/
+~/my-favorite-things/music/disco$ ls
+ymca.txt
+~/my-favorite-things/music/disco$ cd ..
+~/my-favorite-things/music$ ls
+disco
+~/my-favorite-things/music$ rm -r disco/
+~/my-favorite-things/music$ ls
+~/my-favorite-things/music$ mkdir creed
+~/my-favorite-things/music$ ls
+creed
+~/my-favorite-things/music$ rm creed/
+rm: creed/: is a directory
+~/my-favorite-things/music$ ls
+creed
+~/my-favorite-things/music$ rm -r creed
+~/my-favorite-things/music$ ls
+~/my-favorite-things/music$ mkdir one-direction the-strokes rihanna
+~/my-favorite-things/music$ ls
+one-direction	rihanna		the-strokes
+~/my-favorite-things/music$ touch ./one-direction/what-makes-you-beautiful.txt
+~/my-favorite-things/music$ cd one-direction/
+~/my-favorite-things/music/one-direction$ ls
+what-makes-you-beautiful.txt
+~/my-favorite-things/music/one-direction$ cd ..
+~/my-favorite-things/music$ ls
+one-direction	rihanna		the-strokes
+~/my-favorite-things/music$ cd one-direction/
+~/my-favorite-things/music/one-direction$ ls
+what-makes-you-beautiful.txt
+~/my-favorite-things/music/one-direction$ cp what-makes-you-beautiful.txt ../the-strokes
+~/my-favorite-things/music/one-direction$ ls
+~/my-favorite-things/music/one-direction$ cp what-makes-you-beautiful.txt ../rihanna
+~/my-favorite-things/music/one-direction$ 
+
+Last login: Mon Jun 20 19:44:07 on console
+wanMacs-MBP:~ wanmac$ ls 
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r my-favorite-things/ ~/
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cp -R my-favorite-things/ ~/
+cp: my-favorite-things/: No such file or directory
+wanMacs-MBP:~ wanmac$ cp -r /my-favorite-things/ ~/
+wanMacs-MBP:~ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ pwd
+/Users/wanmac
+wanMacs-MBP:~ wanmac$ cp -r /my-favorite-things/ /Users/wanmac
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r /my-favorite-things/ /Users/wanmac
+wanMacs-MBP:/ wanmac$ cd ~/
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			books
+wanMacs-MBP:~ wanmac$ cd /
+wanMacs-MBP:/ wanmac$ ls
+Applications			home
+Library				installer.failurerequests
+Network				my-favorite-things
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+etc
+wanMacs-MBP:/ wanmac$ cp -r my-favorite-things /Users/wanmac
+wanMacs-MBP:/ wanmac$ cd ~
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+wanMacs-MBP:~ wanmac$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+wanMacs-MBP:~ wanmac$ cd my-favorite-things/
+wanMacs-MBP:my-favorite-things wanmac$ ls
+books
+wanMacs-MBP:my-favorite-things wanmac$ subl .
+-bash: subl: command not found
+wanMacs-MBP:my-favorite-things wanmac$ sublime
+wanMacs-MBP:my-favorite-things wanmac$ sublime .
+wanMacs-MBP:my-favorite-things wanmac$ subl .
+-bash: subl: command not found
+wanMacs-MBP:my-favorite-things wanmac$ PS1='\w\$ '
+~/my-favorite-things$ ls
+books
+~/my-favorite-things$ cd books
+~/my-favorite-things/books$ ls
+mark-twain
+~/my-favorite-things/books$ cd mark-twain/
+~/my-favorite-things/books/mark-twain$ ls
+book1.txt	book2.txt
+~/my-favorite-things/books/mark-twain$ cd ..
+~/my-favorite-things/books$ cd ..
+~/my-favorite-things$ mkdir movies
+~/my-favorite-things$ ls
+books	movies
+~/my-favorite-things$ cd movies/
+~/my-favorite-things/movies$ ls
+~/my-favorite-things/movies$ mkdir grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace/
+~/my-favorite-things/movies/grace$ ls
+~/my-favorite-things/movies/grace$ mkdir breakThroughMovies
+~/my-favorite-things/movies/grace$ cd ..
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ touch alice.txt
+~/my-favorite-things/movies$ ls
+alice.txt	grace
+~/my-favorite-things/movies$ mv alice.txt ./grace
+~/my-favorite-things/movies$ ls
+grace
+~/my-favorite-things/movies$ cd grace
+~/my-favorite-things/movies/grace$ ls
+alice.txt		breakThroughMovies
+~/my-favorite-things/movies/grace$ clear
+
+~/my-favorite-things/movies/grace$ ls
+alice.txt		breakThroughMovies
+~/my-favorite-things/movies/grace$ cd ../..
+~/my-favorite-things$ mkdir music
+~/my-favorite-things$ cd music
+~/my-favorite-things/music$ mkdir disco
+~/my-favorite-things/music$ mkdir ./disco/ymca.txt
+~/my-favorite-things/music$ ls
+disco
+~/my-favorite-things/music$ cd disco/
+~/my-favorite-things/music/disco$ ls
+ymca.txt
+~/my-favorite-things/music/disco$ cd ..
+~/my-favorite-things/music$ ls
+disco
+~/my-favorite-things/music$ rm -r disco/
+~/my-favorite-things/music$ ls
+~/my-favorite-things/music$ mkdir creed
+~/my-favorite-things/music$ ls
+creed
+~/my-favorite-things/music$ rm creed/
+rm: creed/: is a directory
+~/my-favorite-things/music$ ls
+creed
+~/my-favorite-things/music$ rm -r creed
+~/my-favorite-things/music$ ls
+~/my-favorite-things/music$ mkdir one-direction the-strokes rihanna
+~/my-favorite-things/music$ ls
+one-direction	rihanna		the-strokes
+~/my-favorite-things/music$ touch ./one-direction/what-makes-you-beautiful.txt
+~/my-favorite-things/music$ cd one-direction/
+~/my-favorite-things/music/one-direction$ ls
+what-makes-you-beautiful.txt
+~/my-favorite-things/music/one-direction$ cd ..
+~/my-favorite-things/music$ ls
+one-direction	rihanna		the-strokes
+~/my-favorite-things/music$ cd one-direction/
+~/my-favorite-things/music/one-direction$ ls
+what-makes-you-beautiful.txt
+~/my-favorite-things/music/one-direction$ cp what-makes-you-beautiful.txt ../the-strokes
+~/my-favorite-things/music/one-direction$ ls
+~/my-favorite-things/music/one-direction$ cp what-makes-you-beautiful.txt ../rihanna
+~/my-favorite-things/music/one-direction$ clear
+
+~/my-favorite-things/music/one-direction$ cd ../..
+~/my-favorite-things$ ls
+books	movies	music
+~/my-favorite-things$ mkdir media
+~/my-favorite-things$ mvv -r books ./media
+-bash: mvv: command not found
+~/my-favorite-things$ mv -r books ./media
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+~/my-favorite-things$ mv books ./media
+~/my-favorite-things$ ls
+media	movies	music
+~/my-favorite-things$ ls media
+books
+~/my-favorite-things$ ls
+media	movies	music
+~/my-favorite-things$ mv movies ./media
+~/my-favorite-things$ mv music ./media
+~/my-favorite-things$ ls
+media
+~/my-favorite-things$ ls media
+books	movies	music
+~/my-favorite-things$ mv * ../
+~/my-favorite-things$ ls
+~/my-favorite-things$ cd ..
+~$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			media
+Documents		Music			my-favorite-things
+Downloads		Pictures
+~$ clear
+
+~$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			books
+Desktop			Movies			media
+Documents		Music			my-favorite-things
+Downloads		Pictures
+~$ mv books ./my-favorite-things
+~$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			media
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+~$ cd ls/my-favorite-things/
+-bash: cd: ls/my-favorite-things/: No such file or directory
+~$ cd my-favorite-things/
+~/my-favorite-things$ ls
+books
+~/my-favorite-things$ cd ..
+~$ ls
+AndroidStudioProjects	IdeaProjects		Public
+Applications		Library			media
+Desktop			Movies			my-favorite-things
+Documents		Music
+Downloads		Pictures
+~$ mv media ./my-favorite-things
+~$ ls
+AndroidStudioProjects	Downloads		Music
+Applications		IdeaProjects		Pictures
+Desktop			Library			Public
+Documents		Movies			my-favorite-things
+~$ cd my-favorite-things/
+~/my-favorite-things$ ls
+books	media
+~/my-favorite-things$ clear
+
+~/my-favorite-things$ ls
+books	media
+~/my-favorite-things$ mv media 2015-media
+~/my-favorite-things$ ls
+2015-media	books
+~/my-favorite-things$ cd 2015-media/
+~/my-favorite-things/2015-media$ ls
+books	movies	music
+~/my-favorite-things/2015-media$ mv books 2016-books
+~/my-favorite-things/2015-media$ mv movies 2016-movies
+~/my-favorite-things/2015-media$ mv music 2016-music
+~/my-favorite-things/2015-media$ ls
+2016-books	2016-movies	2016-music
+~/my-favorite-things/2015-media$ rm -r 2016-books/*
+~/my-favorite-things/2015-media$ ls
+2016-books	2016-movies	2016-music
+~/my-favorite-things/2015-media$ rm -r 2016-movies/*
+~/my-favorite-things/2015-media$ rm -r 2016-music/*
+~/my-favorite-things/2015-media$ touch 2016-movies/top-ten-movies.html
+~/my-favorite-things/2015-media$ ls 2016-movies
+top-ten-movies.html
+~/my-favorite-things/2015-media$ touch 2016-music/top-ten-songs.html
+~/my-favorite-things/2015-media$ touch 2016-books/top-ten-books.html
+
